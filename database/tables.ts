@@ -1,0 +1,13 @@
+const tasbeehTable = `
+  CREATE TABLE IF NOT EXISTS TASBEEH (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    TITLE TEXT NOT NULL,
+    COUNT INTEGER NOT NULL,
+    NOTIFTIME TEXT NOT NULL,
+    CREATEDAT DATETIME DEFAULT CURRENT_TIMESTAMP
+  )
+`;
+
+const tables = [tasbeehTable];
+
+export default tables;
